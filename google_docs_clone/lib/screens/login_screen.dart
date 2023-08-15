@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_docs_clone/colors.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -19,7 +20,14 @@ class _LoginScreenState extends State<LoginScreen> {
             height: 20,
           ),
           label: const Text(
-            'sign in with Google',
+            'Sign in with Google',
+            style: TextStyle(
+              color: kBlackColor,
+            ),
+          ),
+          style: ElevatedButton.styleFrom(
+            backgroundColor: kWhiteColor,
+            minimumSize: const Size(150, 50),
           ),
         ),
       ),
